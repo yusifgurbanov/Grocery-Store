@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f1f1f1;
+    }
+
+    .container {
+
+        min-width: 500px;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        gap: 3;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    form {
+        width: 100%;
+
+    }
+
+    form.show {
+        display: block;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    button[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    #signup-form {
+        margin-top: 50px;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #3e8e41;
+    }
+</style>
+
+<head>
+    <title>Login/Signup Page</title>
+    
+    <script src="./script.js" type="module" defer></script>
+    <script>var exports = {};</script>
+
+</head>
+
+<body>
+    <div class="container">
+        <form id="login-form">
+            <h2>Login</h2>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" id="loginButton">Login</button>
+        </form>
+        <form id="signup-form">
+            <h2>Signup</h2>
+            <label for="newusername">New Username</label>
+            <input type="text" id="newusername" name="newusername" required>
+            <label for="newpassword">New Password</label>
+            <input type="password" id="newpassword" name="newpassword" required>
+            <button type="submit" id="signupButton">Signup</button>
+        </form>
+    </div>
+    
+</body>
+
+</html>
